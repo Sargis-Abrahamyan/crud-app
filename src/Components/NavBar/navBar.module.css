@@ -1,0 +1,10 @@
+#navBar_Container {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--navBar-bg-color);
+}
+
+#title_logo {
+  color: var(--primary-color);
+  font-weight: 700;
+}

@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sargis ",
+      "surname": "Abrahamyan",
+      "email": "sargis.abrahamyan.2023@gmail.com",
+      "phone": "+37494784554",
+      "age": "23"
+    },
+    {
+      "id": 824.4445159973351,
+      "name": "",
+      "surname": "",
+      "email": "",
+      "phone": "",
+      "age": ""
+    }
+  ]
+}
