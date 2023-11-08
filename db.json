@@ -5,16 +5,24 @@
       "name": "Sargis ",
       "surname": "Abrahamyan",
       "email": "sargis.abrahamyan.2023@gmail.com",
-      "phone": "+37494784554",
+      "phone": "+37494784588",
       "age": "23"
     },
     {
       "id": 824.4445159973351,
-      "name": "",
-      "surname": "",
-      "email": "",
-      "phone": "",
-      "age": ""
+      "name": "Hayk",
+      "surname": "Hakobyan",
+      "email": "hayk.hakobyan@gmail.com",
+      "phone": "+37498445521",
+      "age": "74"
+    },
+    {
+      "id": 697.6676606554997,
+      "name": "Arman",
+      "surname": "Beglaryan",
+      "email": "beglaryan008@gmail.com",
+      "phone": "+37494662217",
+      "age": "28"
     }
   ]
 }

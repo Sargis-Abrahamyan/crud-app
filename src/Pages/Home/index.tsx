@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 import Button from '../../Components/Button';
 import Loading from '../../Components/Loading';
 import { tableItem } from './utils';
-import { useGetUserQuery, useDeleteUserMutation } from '../../Features/Api/api';
+import {
+  useGetUsersQuery,
+  useDeleteUserMutation,
+} from '../../Features/Api/api';
 import styles from './styles.module.css';
 
 const Home: React.FC = () => {
-  const { isLoading, data } = useGetUserQuery();
+  const { isLoading, data, isSuccess } = useGetUsersQuery();
   const [deleteUser] = useDeleteUserMutation();
 
   const handelDelete = (id: number): void => {
@@ -36,7 +39,7 @@ const Home: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {data &&
+            {isSuccess &&
               data.map((item: any) => {
                 return (
                   <tr className={styles.table_item} key={item.id}>

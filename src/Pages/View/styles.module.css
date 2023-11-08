@@ -1,0 +1,38 @@
+.view_container {
+  max-width: 600px;
+  margin: auto;
+  box-shadow: var(--shodow);
+  height: 400px;
+}
+
+.view_title_block {
+  padding: 30px;
+  background-color: var(--navBar-bg-color);
+}
+
+.view_title {
+  color: var(--primary-color);
+}
+
+.info_item {
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.info_item > span {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.link {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--navBar-bg-color);
+  padding: 10px;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
+  color: var(--primary-color);
+}

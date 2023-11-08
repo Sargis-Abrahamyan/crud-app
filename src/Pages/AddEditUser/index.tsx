@@ -4,7 +4,7 @@ import Button from '../../Components/Button';
 import { useAddEditUser } from './useAddEditUser';
 import styles from './styles.module.css';
 
-const AddEditUser: React.FC = () => {
+const AddEditUser: React.FC = (data: any) => {
   const { handleSubmit, handelChange, user, editMode } = useAddEditUser();
   const { name, surname, email, phone, age } = user;
 

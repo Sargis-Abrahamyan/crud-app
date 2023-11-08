@@ -3,9 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--navBar-bg-color);
 }
 
 .notFound_title {
   margin-bottom: 10px;
   font-weight: 700;
+  font-size: 100px;
+}
+
+.notFound_info {
+  font-size: 50px;
 }
