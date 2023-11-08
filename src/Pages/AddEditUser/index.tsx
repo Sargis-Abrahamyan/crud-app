@@ -3,16 +3,27 @@ import React from 'react';
 import Button from '../../Components/Button';
 import { useAddEditUser } from './useAddEditUser';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
-const AddEditUser: React.FC = (data: any) => {
+const AddEditUser: React.FC = () => {
   const { handleSubmit, handelChange, user, editMode } = useAddEditUser();
   const { name, surname, email, phone, age } = user;
 
   return (
     <div className={styles.addEditUser_container}>
-      <h3 className={styles.addEditUser_title}>
-        {editMode ? 'Update User' : 'create users'}
-      </h3>
+      <div className={styles.top_wrapper}>
+        <h3 className={styles.addEditUser_title}>
+          {editMode ? 'Update User' : 'create users'}
+        </h3>
+        <Link to="/">
+          <Button
+            content="Go Back"
+            bgColor="rgb(84, 105, 212)"
+            color="#fff"
+            width="90px"
+          />
+        </Link>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className={styles.form_group}>
           <label>

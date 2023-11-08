@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import { useGetUserQuery } from '../../Features/Api/api';
 import { Link, useParams } from 'react-router-dom';
+import Button from '../../Components/Button';
 
 const View = () => {
   const { id } = useParams();
@@ -38,7 +39,12 @@ const View = () => {
           </p>
         </div>
         <Link to="/" className={styles.link}>
-          Go Back
+          <Button
+            content="Go Back"
+            bgColor="rgb(84, 105, 212)"
+            color="#fff"
+            width="90px"
+          />
         </Link>
       </div>
     </div>
@@ -46,3 +52,4 @@ const View = () => {
 };
 
 export default View;
+

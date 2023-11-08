@@ -3,6 +3,12 @@
   font-size: 25px;
 }
 
+.top_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
 form {
   width: 100%;
   max-width: 420px;
